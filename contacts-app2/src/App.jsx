@@ -1,27 +1,33 @@
 import "./App.css";
 import Contact from "./Contact.jsx";
+import contacts from "./contacts.js";
 
 function App() {
+  console.log(contacts);
   return (
-    <div>
+    <div> {/* Each contact is shown because of the function in contact.jsx */}
       <h1>My Contacts</h1>
       <Contact 
-      name="Rosalind Franklin" 
-      phoneNumber="208-543-7865"
-      email="rosalind@fakemail.com"
-      avatar="https://i.pravatar.cc/150?img=10" />
-
-      <Contact 
-      name="Katherine Johnson" 
-      phoneNumber="801-365-6893"
-      email="katherine@fakemail.com"
-      avatar="https://i.pravatar.cc/150?img=41" />
-
-      <Contact 
-      name="Marie Curie" 
-      phoneNumber="458-284-6749"
-      email="marie@fakemail.com"
-      avatar="https://i.pravatar.cc/150?img=28" />
+      // shows the first contact 
+        name={contacts[0].name}
+        phoneNumber={contacts[0].phoneNumber}
+        email={contacts[0].email}
+        avatar={contacts[0].avatar}
+      />
+      <Contact
+      // shows the second contact 
+        name={contacts[1].name}
+        phoneNumber={contacts[1].phoneNumber}
+        email={contacts[1].email}
+        avatar={contacts[1].avatar}
+      />
+      <Contact
+      // shows the third contact 
+        name={contacts[2].name}
+        phoneNumber={contacts[2].phoneNumber}
+        email={contacts[2].email}
+        avatar={contacts[2].avatar}
+      />
     </div>
   );
 }

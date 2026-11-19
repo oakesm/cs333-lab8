@@ -175,6 +175,8 @@ and this one under the phone line:
 
 Question 3: the `Contact` component is written once. How does it show three different people?
 
+It works kind of like a loop where each contact goes through the contact componenet to get the different information for each. 
+
 Commit: `Part 2: props`
 
 ---
@@ -226,6 +228,8 @@ and inside `function App() {`, above the `return`, add:
 
 Question 4: what does the Console show? What is `contacts`, and what is each thing inside it?
 
+It shows an array with the contacts information and objects. 
+
 10. Now replace your three `<Contact ... />` tags in `App.jsx` with these, which read from `contacts`:
 
 ```jsx
@@ -252,6 +256,8 @@ Question 4: what does the Console show? What is `contacts`, and what is each thi
 The page should look the same. But now all your data lives in `contacts.js`.
 
 Question 5: why `0`, `1` and `2`? What would you have to do if you had 100 contacts?
+
+Because that's how indexing works. It starts at 0. So the first contact isn't 1 it's 0. If there were 100 contacts it would be 0-99. There is probably a better way to code it more efficiently. 
 
 Commit: `Part 3: data in contacts.js`
 

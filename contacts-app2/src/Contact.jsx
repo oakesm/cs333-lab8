@@ -1,6 +1,6 @@
 function Contact(props) {
   console.log(props);
-
+// function to create divs with each contact's information in
   return (
     <div className="contact">
     <img className="avatar" src={props.avatar} alt={props.name} />
