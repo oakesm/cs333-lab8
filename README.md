@@ -111,6 +111,8 @@ and under the `<h1>` line, add three of them:
 
 Question 1: what do you see? Why are all three the same?
 
+Ada Lovelace with her phone number 3 times. They are all the same because there is only one contact so it is shown 3 times. 
+
 6. Props. A prop is a value you hand to a component, written like an HTML attribute. Change `Contact.jsx` to this:
 
 ```jsx
@@ -141,6 +143,8 @@ TODO: change the names and phone numbers to people you make up (or your favorite
 Look in the Console. (You might see each line twice. That's React double-checking your code while you develop, it's normal and it doesn't happen on your server.)
 
 Question 2: what does `console.log(props)` print? What kind of thing is `props`?
+
+It prints the contacts list twice. Props is an object. 
 
 7. Two more props. Add `email` and `avatar` to each `<Contact />` in `App.jsx`, for example:
 
