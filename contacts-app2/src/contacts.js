@@ -1,3 +1,4 @@
+// array with all of the contacts' information. id for each one so that there are no errors in the console
 const contacts = [
   {
     id:1,
@@ -24,7 +25,7 @@ const contacts = [
     id:4,
     name: "Mae Jemison",
     phoneNumber: "541-333-6849",
-    email: "mae@fakemail.com",
+    
     avatar: "https://i.pravatar.cc/150?img=16",
   },
 ];

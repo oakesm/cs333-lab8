@@ -403,6 +403,8 @@ The page should look the same. `App` uses `Contact`, and now `Contact` uses `Ava
 
 Question 9: what does that contact show for Email? Why?
 
+It shows "Email:    ". Because there is a template for each contact that includes an email and there isn't an email so it is left blank. 
+
 Fix it in `Contact.jsx` by changing the email line to this:
 
 ```jsx

@@ -2,6 +2,7 @@ import "./App.css";
 import Contact from "./Contact.jsx";
 import contacts from "./contacts.js";
 
+{/*function to create contact */}
 function createContact(contact) {
   return (
     <Contact
@@ -15,8 +16,9 @@ function createContact(contact) {
 }
 function App() {
   console.log(contacts);
-
+// function to create all names from contact.js using map function
   const names = contacts.map(function (contact) {
+    console.log("Running map for:", contact.name);
     return contact.name;
   });
   console.log(names);
